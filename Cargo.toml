@@ -15,15 +15,15 @@ lua = ["rlua", "rlua_ext"]
 ini = ["bitflags"]
 
 [dependencies]
-rlua = { path = "../rlua", optional = true }
-rlua_ext = { path = "../rlua_ext", optional = true }
+rlua = { git = "https://github.com/amethyst/rlua.git", optional = true }
+rlua_ext = { git = "https://github.com/xorstr/rlua_ext.git", optional = true }
 bitflags = { version = "1.2.1", optional = true }
-ministr = { path = "../ministr" }
-ministr_macro = { path = "../ministr_macro", optional = true }
+ministr = { git = "https://github.com/xorstr/ministr.git" }
+ministr_macro = { git = "https://github.com/xorstr/ministr_macro.git", optional = true }
 static_assertions = { version = "1.1.0", optional = true }
 
 [dev-dependencies]
-ministr_macro = { path = "../ministr_macro" }
+ministr_macro = { git = "https://github.com/xorstr/ministr_macro.git" }
 
 [[example]]
 name = "example"
